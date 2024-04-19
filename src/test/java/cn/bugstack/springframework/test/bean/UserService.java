@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 public class UserService {
 
     public void queryUserInfo(){
-        System.out.println("1");
+        System.out.println("查询用户信息");
     }
 }
