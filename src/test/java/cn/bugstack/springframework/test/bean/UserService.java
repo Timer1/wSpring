@@ -4,9 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserService {
+    private  String uId;
 
-    public void queryUserInfo(){
-        System.out.println("查询用户信息");
+    private UserDao userDao;
+
+    public String queryUserInfo(){
+        return userDao.queryUserName(uId);
     }
 }

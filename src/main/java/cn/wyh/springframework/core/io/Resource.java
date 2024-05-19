@@ -1,2 +1,9 @@
-package cn.wyh.springframework.core.io;public interface Resource {
+package cn.wyh.springframework.core.io;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+public interface Resource {
+
+    InputStream getInputStream() throws IOException;
 }
